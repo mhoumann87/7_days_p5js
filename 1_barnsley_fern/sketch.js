@@ -1,3 +1,11 @@
+/* 
+  Made from the Coding Train Challenge no. 108
+  https://thecodingtrain.com/challenges/108-barnsley-fern
+  
+  Read more about the algorithm on Wikipedia
+  https://en.wikipedia.org/wiki/Barnsley_fern
+*/
+
 // We need an x and y to start out with
 let x = 0;
 let y = 0;
