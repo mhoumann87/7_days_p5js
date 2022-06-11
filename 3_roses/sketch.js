@@ -41,7 +41,7 @@ draw = () => {
   // We start our rose drawing
   beginShape();
 
-  stroke(184, 15, 10);
+  stroke(255);
   noFill();
   strokeWeight(1);
 
