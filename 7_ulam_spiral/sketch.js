@@ -47,7 +47,8 @@ isPrime = value => {
 
 setup = () => {
   createCanvas(500, 500);
-
+  // Change the color mode to HSB
+  colorMode(HSB);
   // Calculate the number of columns and rows
   const cols = width / stepSize;
   const rows = height / stepSize;
@@ -64,11 +65,15 @@ setup = () => {
 };
 
 draw = () => {
+  // Calculate the the color base on the step number
+  const hue = map(step, 0, totalSteps, 0, 360);
+  console.log(hue);
+
   // If the current number is a prime number,
   // We draw a circle in the canvas
   if (isPrime(step)) {
-    fill(255);
-    stroke(255);
+    fill(hue, 255, 255);
+    stroke(hue, 255, 255);
     circle(x, y, stepSize * 0.5);
   }
   /*   // Connect the dots with a line
